@@ -30,16 +30,16 @@ export default function ExploreLayout({
   const router = useRouter();
   const description = `Discover ${Intl.NumberFormat("en-us").format(
     totalConvos
-  )} ${type} ChatGPT conversations shared via ShareGPT.`;
+  )} ${type} ChatGPT conversations shared via KoShareGPT.`;
 
   return (
     <Layout
       meta={{
         title: `Explore ${
           type === "top" ? "Top" : "New"
-        } Conversations on ShareGPT`,
+        } Conversations on KoShareGPT`,
         description,
-        canonical: `https://sharegpt.com/explore${
+        canonical: `https://kosharegpt.com/explore${
           type === "top" ? "" : "/new"
         }`,
       }}

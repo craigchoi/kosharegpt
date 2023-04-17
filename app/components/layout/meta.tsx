@@ -2,11 +2,11 @@ import Head from "next/head";
 const FAVICON_FOLDER = "/favicons";
 
 export default function Meta({
-  title = `ShareGPT: Share your wildest ChatGPT conversations with one click.`,
-  description = `ShareGPT is a Chrome extension that allows you to share your wildest ChatGPT conversations with one click.`,
-  image = "https://sharegpt.com/thumbnail.png",
+  title = `KoShareGPT: 한번의 클릭으로 ChatGPT와의 대화를 공유해 보세요!`,
+  description = `KoShareGPT는 ChatGPT와의 대화를 한번의 클릭으로 공유할 수 있는 크롬 익스텐션입니다.`,
+  image = "https://kosharegpt.com/thumbnail.png",
   imageAlt = "OG image for the ShareGPT application",
-  canonical = "https://sharegpt.com",
+  canonical = "https://kosharegpt.com",
 }: {
   title?: string;
   description?: string;
@@ -48,7 +48,7 @@ export default function Meta({
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta itemProp="image" content={image} />
-      <meta property="og:logo" content="https://sharegpt.com/logo.png"></meta>
+      <meta property="og:logo" content="https://kosharegpt.com/logo.png"></meta>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />

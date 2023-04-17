@@ -25,7 +25,7 @@ const SignInModal = ({
       <div className="inline-block w-full sm:max-w-md py-8 px-4 sm:px-16 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl">
         <div>
           <h3 className="font-display font-bold text-3xl mb-4 tracking-tight sm:tracking-wide">
-            Sign In
+            로그인
           </h3>
           <p className="text-sm text-gray-500">
             By signing in, you agree to our{" "}
@@ -70,7 +70,7 @@ const SignInModal = ({
                   width={20}
                   height={20}
                 />
-                <p>Sign In with Google</p>
+                <p>Google로 로그인하기</p>
               </>
             )}
           </button>
@@ -91,7 +91,7 @@ const SignInModal = ({
             ) : (
               <>
                 <Twitter className="text-[#1DA1F2] w-5 h-5" />
-                <p>Sign In with Twitter</p>
+                <p>Twitter로 로그인하기</p>
               </>
             )}
           </button>

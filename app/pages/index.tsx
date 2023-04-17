@@ -31,20 +31,20 @@ export default function Home({
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
           <p className="text-sm font-semibold text-[#1d9bf0]">
-            Introducing ShareGPT
+            KoShareGPT 소개
           </p>
         </Link>
         <div className="flex flex-col items-center space-y-8 text-center mx-5 sm:mx-auto">
           <h1 className="font-display tracking-tight font-bold text-4xl text-gray-800 transition-colors sm:text-7xl">
-            ShareGPT
+            KoShareGPT
           </h1>
           <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
-            Share your wildest ChatGPT conversations with one click.
+            한번의 클릭으로 ChatGPT와의 대화를 공유해 보세요!
             <br />
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               {Intl.NumberFormat("en-us").format(totalConvos)}
             </span>{" "}
-            conversations shared so far.
+            건의 대화가 공유 되었습니다.
           </p>
           <div className="flex flex-col sm:flex-row">
             <div className="flex justify-center items-center mb-3 sm:mr-3 sm:mb-0 rounded-lg bg-[#232c67] md:bg-indigo-500 text-white shadow-md">
@@ -60,7 +60,7 @@ export default function Home({
                   width={20}
                   height={20}
                 />
-                <p>Install extension</p>
+                <p>크롬 익스텐션 설치</p>
               </a>
               <a
                 className="flex md:hidden space-x-3 justify-center items-center px-5 py-3 border-r-2 border-white/25 font-medium md:hover:bg-indigo-600 transition-all rounded-l-lg"
@@ -75,7 +75,7 @@ export default function Home({
                   height={20}
                   className="border-2 border-white/25 rounded-md"
                 />
-                <p>Add shortcut</p>
+                <p>바탕화면에 추가</p>
               </a>
               <Popover
                 content={
@@ -92,7 +92,7 @@ export default function Home({
                         width={20}
                         height={20}
                       />
-                      <p>Install extension</p>
+                      <p>크롬 익스텐션 설치</p>
                     </a>
                     <a
                       href="/shortcut"
@@ -106,7 +106,7 @@ export default function Home({
                         width={20}
                         height={20}
                       />
-                      <p>Add shortcut</p>
+                      <p>바탕화면에 추가</p>
                     </a>
                   </div>
                 }
@@ -150,7 +150,7 @@ export default function Home({
         </div>
         <div className="py-4 px-2 sm:max-w-screen-lg w-full">
           <h2 className="text-3xl sm:text-4xl font-semibold font-display">
-            Browse Examples
+            구경하기
           </h2>
           <ul className="mt-8 grid gap-2">
             {topConvos.map((convo) => (
@@ -163,9 +163,9 @@ export default function Home({
         <Link
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/domeccleston/sharegpt"
+          href="https://github.com/craigchoi/kosharegpt"
         >
-          <h1 className="mb-2 text-sm">View source on GitHub</h1>
+          <h1 className="mb-2 text-sm">GitHub에서 소스보기</h1>
         </Link>
         <Link
           rel="noopener noreferrer"

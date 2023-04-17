@@ -40,7 +40,7 @@ export default function Layout({
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>ShareGPT</p>
+            <p>KoShareGPT</p>
           </Link>
           <div>
             <AnimatePresence>
@@ -50,7 +50,7 @@ export default function Layout({
                   onClick={() => setShowSignInModal(true)}
                   {...FADE_IN_ANIMATION_SETTINGS}
                 >
-                  Sign In
+                  로그인
                 </motion.button>
               ) : (
                 <UserDropdown />

@@ -18,7 +18,7 @@ export default function CopyButton() {
     <button
       ref={copyRef}
       onClick={() =>
-        navigator.clipboard.writeText(`https://shareg.pt/${id}`).then(() => {
+        navigator.clipboard.writeText(`https://koshareg.pt/${id}`).then(() => {
           toast.success("Link copied to clipboard");
           setCopied(true);
           setTimeout(() => setCopied(false), 2000);

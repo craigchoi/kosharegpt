@@ -75,13 +75,13 @@ const nextConfig = {
     return [
       {
         source: "/explore",
-        destination: "https://sharegpt.com",
+        destination: "https://kosharegpt.com",
         permanent: false,
       },
       {
         source: "/extension",
         destination:
-          "https://chrome.google.com/webstore/detail/sharegpt/daiacboceoaocpibfodeljbdfacokfjb?hl=en&authuser=0",
+          "https://chrome.google.com/webstore/detail/kosharegpt-chatgpt%EC%99%80%EC%9D%98-%EB%8C%80%ED%99%94%EB%A5%BC/fhdcapmddpgmhhjifgpahpgodigigcck/related?hl=en&authuser=0",
         permanent: false,
       },
       {
@@ -92,7 +92,7 @@ const nextConfig = {
       },
       {
         source: "/github",
-        destination: "https://github.com/domeccleston/sharegpt",
+        destination: "https://github.com/craigchoi/kosharegpt",
         permanent: false,
       },
       {
@@ -106,10 +106,10 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "shareg.pt",
+            value: "koshareg.pt",
           },
         ],
-        destination: "https://sharegpt.com",
+        destination: "https://kosharegpt.com",
         permanent: false,
       },
       {
@@ -117,10 +117,10 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "shareg.pt",
+            value: "koshareg.pt",
           },
         ],
-        destination: "https://sharegpt.com/c/:path*",
+        destination: "https://kosharegpt.com/c/:path*",
         permanent: false,
       },
     ];
