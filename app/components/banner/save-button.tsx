@@ -61,12 +61,12 @@ export default function SaveButton({ id }: { id: string }) {
                           ? toast.success("Successfully unsaved conversation!")
                           : toast(() => (
                               <div className="flex items-center flex-col justify-center space-y-1">
-                                <p>Successfully saved conversation!</p>
+                                <p>성공적으로 대화가 저장 되었습니다!</p>
                                 <Link
                                   href="/dashboard"
                                   className="font-medium underline underline-offset-4 text-black"
                                 >
-                                  View all your saved conversations.
+                                  저장된 모든 대화 보기
                                 </Link>
                               </div>
                             ));

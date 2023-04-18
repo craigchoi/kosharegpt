@@ -12,7 +12,7 @@ const tabs = [
     href: "/explore",
   },
   {
-    name: "New",
+    name: "새로운",
     icon: <Star className="h-4 w-4 text-gray-600" />,
     href: "/explore/new",
   },
@@ -23,20 +23,20 @@ export default function ExploreLayout({
   totalConvos,
   children,
 }: {
-  type: "new" | "top";
+  type: "새로운" | "top";
   totalConvos: number;
   children: ReactNode;
 }) {
   const router = useRouter();
-  const description = `Discover ${Intl.NumberFormat("en-us").format(
+  const description = `${Intl.NumberFormat("en-us").format(
     totalConvos
-  )} ${type} ChatGPT conversations shared via KoShareGPT.`;
+  )} 건의 ${type} ChatGPT 대화를 발견하십시오.`;
 
   return (
     <Layout
       meta={{
         title: `Explore ${
-          type === "top" ? "Top" : "New"
+          type === "top" ? "Top" : "새로운"
         } Conversations on KoShareGPT`,
         description,
         canonical: `https://kosharegpt.com/explore${
@@ -47,14 +47,14 @@ export default function ExploreLayout({
       <div className="flex flex-col items-center pt-28 bg-gray-50">
         <div className="flex flex-col items-center space-y-8 text-center mx-5 sm:mx-auto">
           <h1 className="font-display tracking-tight font-bold text-4xl text-gray-800 transition-colors sm:text-7xl">
-            Explore
+            구경하기
           </h1>
           <p className="max-w-xl text-gray-600 transition-colors sm:text-lg">
-            Discover{" "}
+            {" "}
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               {Intl.NumberFormat("en-us").format(totalConvos)}
-            </span>{" "}
-            {type} ChatGPT conversations shared via ShareGPT.
+            </span>{" "}의
+            {type} ChatGPT와의 대화가 공유 되었습니다.
           </p>
         </div>
         {/* Tabs */}

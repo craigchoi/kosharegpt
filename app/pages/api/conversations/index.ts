@@ -122,7 +122,7 @@ async function setRandomKey(
   const id = nanoid();
   let title;
 
-  if (content?.title && content?.title !== "New conversation") {
+  if (content?.title && content?.title !== "새로운 대화") {
     title = content?.title;
   } else {
     title = content?.items[0]?.value

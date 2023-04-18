@@ -5,7 +5,7 @@ export default function Meta({
   title = `KoShareGPT: 한번의 클릭으로 ChatGPT와의 대화를 공유해 보세요!`,
   description = `KoShareGPT는 ChatGPT와의 대화를 한번의 클릭으로 공유할 수 있는 크롬 익스텐션입니다.`,
   image = "https://kosharegpt.com/thumbnail.png",
-  imageAlt = "OG image for the ShareGPT application",
+  imageAlt = "OG image for the KoShareGPT application",
   canonical = "https://kosharegpt.com",
 }: {
   title?: string;

@@ -18,7 +18,7 @@ export default function CopyButton() {
     <button
       ref={copyRef}
       onClick={() =>
-        navigator.clipboard.writeText(`https://koshareg.pt/${id}`).then(() => {
+        navigator.clipboard.writeText(`https://kosharegpt.com/${id}`).then(() => {
           toast.success("Link copied to clipboard");
           setCopied(true);
           setTimeout(() => setCopied(false), 2000);
@@ -31,7 +31,7 @@ export default function CopyButton() {
       ) : (
         <LinkIcon className="h-4 w-4 text-gray-600" />
       )}
-      <p className="text-center text-gray-600 text-sm">Copy</p>
+      <p className="text-center text-gray-600 text-sm">복사</p>
     </button>
   );
 }

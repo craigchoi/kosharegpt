@@ -61,7 +61,7 @@ export default function DeleteInfoModal({
                   </h3>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      ShareGPT convos are private by default and only accessible
+                      KoShareGPT convos are private by default and only accessible
                       by a direct link. They are not indexed on Google, unless
                       they exceed 100 views. <br /> <br /> If you still want to
                       delete this conversation, you can do so within the next 60

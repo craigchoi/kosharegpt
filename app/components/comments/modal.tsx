@@ -99,11 +99,11 @@ const CommentModal = ({
             >
               <ChevronLeft className="w-5 h-5 text-gray-500" />
               <h2 className="font-medium text-gray-500">
-                Back to all comments
+                댓글 목록으로 돌아가기
               </h2>
             </button>
           ) : (
-            <h2 className="text-xl font-medium text-gray-600 p-2">Comments</h2>
+            <h2 className="text-xl font-medium text-gray-600 p-2">댓글</h2>
           )}
           <button
             onClick={() =>
@@ -140,13 +140,13 @@ const CommentModal = ({
                   src="/illustrations/empty.svg"
                   width={200}
                   height={200}
-                  alt="No comments yet"
+                  alt="아직 댓글이 없습니다."
                 />
                 <h2 className="text-xl font-medium text-gray-600">
-                  No comments yet
+                아직 댓글이 없습니다.
                 </h2>
                 <p className="text-sm text-gray-500">
-                  Be the first to comment on this conversation
+                  첫 댓글을 남겨보세요!
                 </p>
               </div>
             )}

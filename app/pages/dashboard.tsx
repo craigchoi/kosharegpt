@@ -12,11 +12,10 @@ export default function Dashboard({ convos }: { convos: ConversationMeta[] }) {
       <div className="flex flex-col items-center py-28 bg-gray-50">
         <div className="flex flex-col items-center space-y-5 text-center mx-5 sm:mx-auto">
           <h1 className="font-display tracking-tight font-bold text-3xl text-gray-800 transition-colors sm:text-5xl">
-            Saved Conversations
+            대화 목록
           </h1>
           <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
-            List of all your saved conversations on ShareGPT, sorted by saved
-            date.
+            저장된 모든 대화 목록입니다. 저장된 일자 순서로 보입니다.
           </p>
         </div>
         <div className="py-4 px-2 sm:max-w-screen-lg w-full">

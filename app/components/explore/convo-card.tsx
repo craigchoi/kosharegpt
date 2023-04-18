@@ -35,7 +35,7 @@ export default function ConvoCard({ data }: { data: ConversationMeta }) {
               {timeAgo(createdAt, true)}
             </p>
             <p className="hidden sm:block text-gray-500 text-sm hover:text-gray-800">
-              created {timeAgo(createdAt)}
+              {timeAgo(createdAt)} 생성됨
             </p>
           </Link>
           <p className="text-gray-500 text-sm">|</p>
@@ -45,7 +45,7 @@ export default function ConvoCard({ data }: { data: ConversationMeta }) {
               <p className="text-gray-500 text-sm">{nFormatter(views)}</p>
             </div>
             <p className="hidden sm:block text-gray-500 text-sm hover:text-gray-800">
-              {nFormatter(views)} views
+              {nFormatter(views)} 보기
             </p>
           </Link>
           <p className="text-gray-500 text-sm">|</p>
@@ -55,7 +55,7 @@ export default function ConvoCard({ data }: { data: ConversationMeta }) {
               <p className="text-gray-500 text-sm">{nFormatter(0)}</p>
             </div>
             <p className="hidden sm:block text-gray-500 text-sm hover:text-gray-800">
-              {nFormatter(comments)} comments
+              {nFormatter(comments)} 댓글
             </p>
           </Link>
         </div>

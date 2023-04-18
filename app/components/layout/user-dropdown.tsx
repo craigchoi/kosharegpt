@@ -27,14 +27,14 @@ export default function UserDropdown() {
               href="/dashboard"
             >
               <LayoutDashboard className="h-4 w-4" />
-              <p className="text-sm">Dashboard</p>
+              <p className="text-sm">대쉬보드</p>
             </Link>
             <button
               className="flex items-center justify-start space-x-2 relative w-full rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
               onClick={() => signOut()}
             >
               <LogOut className="h-4 w-4" />
-              <p className="text-sm">Logout</p>
+              <p className="text-sm">로그 아웃</p>
             </button>
           </div>
         }
