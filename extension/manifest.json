@@ -1,7 +1,7 @@
 {
   "name": "KoShareGPT:ChatGPT와의 대화를 공유해 보세요",
   "description": "KoShareGPT는 ChatGPT와의 대화를 공유할 수 있는 크롬 익스텐션입니다",
-  "version": "0.0.1",
+  "version": "2.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "assets/icons/icon16.png",
@@ -26,5 +26,5 @@
       "run_at": "document_end"
     }
   ],
-  "host_permissions": ["https://kosharegpt.com/*"]
+  "host_permissions": ["https://www.kosharegpt.com/*"]
 }
