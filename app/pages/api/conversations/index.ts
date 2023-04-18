@@ -127,7 +127,7 @@ async function setRandomKey(
   } else {
     title = content?.items[0]?.value
       ? truncate(content?.items[0]?.value, 180)
-      : "Untitled";
+      : "제목없음";
   }
 
   const avatar = content?.avatarUrl || `https://avatar.vercel.sh/${id}`;
