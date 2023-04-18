@@ -1,11 +1,11 @@
-fetch("https://sharegpt.com/api/auth/csrf").then(async (res) => {
+fetch("https://kosharegpt.com/api/auth/csrf").then(async (res) => {
   const json = await res.json();
   const csrf = json.csrfToken;
   document.querySelector("#csrfToken-google").value = csrf;
   document.querySelector("#csrfToken-twitter").value = csrf;
 });
 
-fetch("https://sharegpt.com/api/auth/session").then(async (res) => {
+fetch("https://kosharegpt.com/api/auth/session").then(async (res) => {
   const json = await res.json();
   document.querySelector("#loading-div").style.display = "none";
   if (json.user) {

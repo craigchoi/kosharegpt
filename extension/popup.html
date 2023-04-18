@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Share GPT</title>
+    <title>KoShare GPT</title>
     <link rel="stylesheet" href="popup.css" />
     <script src="popup.js"></script>
   </head>
@@ -12,27 +12,27 @@
     </div>
     <div id="login-div" class="container">
       <img src="/assets/icons/icon48.png" alt="Share GPT" />
-      <h1 class="title">Login to ShareGPT</h1>
+      <h1 class="title">ShareGPT로그인</h1>
       <form
-        action="https://sharegpt.com/api/auth/signin/google"
+        action="https://kosharegpt.com/api/auth/signin/google"
         target="_blank"
         method="POST"
       >
         <input id="csrfToken-google" type="hidden" name="csrfToken" />
         <button type="submit" class="button">
           <img src="/assets/chrome.svg" alt="Google" />
-          <span>Log in with Google</span>
+          <span>Google로 로그인하기</span>
         </button>
       </form>
       <form
-        action="https://sharegpt.com/api/auth/signin/twitter"
+        action="https://kosharegpt.com/api/auth/signin/twitter"
         target="_blank"
         method="POST"
       >
         <input id="csrfToken-twitter" type="hidden" name="csrfToken" />
         <button class="button">
           <img src="/assets/twitter.svg" alt="Twitter" />
-          <span>Log in with Twitter</span>
+          <span>Twitter로 로그인하기</span>
         </button>
       </form>
     </div>
@@ -40,7 +40,7 @@
       <img id="session-image" alt="User Profile Pic" class="profile-pic" />
       <h1 id="session-name" class="title"></h1>
       <p class="subtitle">
-        You are logged in as <span id="session-username"></span>
+        <span id="session-username">로 로그인 되었습니다</span>
       </p>
     </div>
   </body>

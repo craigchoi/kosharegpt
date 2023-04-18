@@ -1,7 +1,7 @@
 {
-  "name": "ShareGPT: Share your ChatGPT conversations",
-  "description": "ShareGPT is a Chrome extension that lets you your wildest ChatGPT conversations with one click.",
-  "version": "1.0.95",
+  "name": "KoShareGPT:ChatGPT와의 대화를 공유해 보세요",
+  "description": "KoShareGPT는 ChatGPT와의 대화를 공유할 수 있는 크롬 익스텐션입니다",
+  "version": "0.0.1",
   "manifest_version": 3,
   "icons": {
     "16": "assets/icons/icon16.png",
@@ -16,7 +16,7 @@
       "48": "assets/icons/icon48.png",
       "128": "assets/icons/icon128.png"
     },
-    "default_title": "Login to ShareGPT",
+    "default_title": "KoShareGPT로그인",
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -26,5 +26,5 @@
       "run_at": "document_end"
     }
   ],
-  "host_permissions": ["https://sharegpt.com/*"]
+  "host_permissions": ["https://kosharegpt.com/*"]
 }
