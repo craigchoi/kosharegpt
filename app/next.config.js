@@ -112,17 +112,17 @@ const nextConfig = {
       //   destination: "https://kosharegpt.com",
       //   permanent: false,
       // },
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "kosharegpt.com",
-          },
-        ],
-        destination: "https://kosharegpt.com/c/:path*",
-        permanent: false,
-      },
+      // {
+      //   source: "/:path*",
+      //   has: [
+      //     {
+      //       type: "host",
+      //       value: "kosharegpt.com",
+      //     },
+      //   ],
+      //   destination: "https://kosharegpt.com/c/:path*",
+      //   permanent: false,
+      // },
     ];
   },
 };
