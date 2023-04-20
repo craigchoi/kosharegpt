@@ -20,7 +20,7 @@ export default function ViewCounter({ views }: { views: number }) {
           </div>
         </TooltipTrigger>
         <TooltipContent>
-          <p>Number of times this conversation has been viewed</p>
+          <p>이 대화를 보여준 횟수를 보여 줍니다.</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

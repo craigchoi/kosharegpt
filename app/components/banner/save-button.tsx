@@ -93,7 +93,7 @@ export default function SaveButton({ id }: { id: string }) {
             </p>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Save this conversation to your account. Login required.</p>
+            <p>이 대화를 내 계정에 저장합니다. 로그인이 필요합니다.</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

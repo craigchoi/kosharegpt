@@ -19,7 +19,7 @@ export default function CopyButton() {
       ref={copyRef}
       onClick={() =>
         navigator.clipboard.writeText(`https://kosharegpt.com/${id}`).then(() => {
-          toast.success("Link copied to clipboard");
+          toast.success("클립보드에 링크가 복사 되었습니다");
           setCopied(true);
           setTimeout(() => setCopied(false), 2000);
         })
