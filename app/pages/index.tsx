@@ -44,8 +44,19 @@ export default function Home({
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               {Intl.NumberFormat("en-us").format(totalConvos)}
             </span>{" "}
-            건의 대화가 공유 되었습니다.
+            건의 대화가 공유 되었습니다.            
           </p>
+          <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
+            현재 크롬 익스텐션 등록 심사 중입니다. 그 동안은 아래 링크를 통해 다운로드 수 사용하실 수 있습니다.
+            <br />            
+          </p>
+          <Link
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/craigchoi/kosharegpt/raw/main/extension/%ED%81%AC%EB%A1%AC%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98.zip"
+        >
+          <h1 className="mb-2 text-sm">다운로드</h1>
+        </Link>
           <div className="flex flex-col sm:flex-row">
             <div className="flex justify-center items-center mb-3 sm:mr-3 sm:mb-0 rounded-lg bg-[#232c67] md:bg-indigo-500 text-white shadow-md">
               <a
@@ -62,7 +73,7 @@ export default function Home({
                 />
                 <p>크롬 익스텐션 설치</p>
               </a>
-              <a
+              {/* <a
                 className="flex md:hidden space-x-3 justify-center items-center px-5 py-3 border-r-2 border-white/25 font-medium md:hover:bg-indigo-600 transition-all rounded-l-lg"
                 href="/shortcut"
                 target="_blank"
@@ -76,7 +87,7 @@ export default function Home({
                   className="border-2 border-white/25 rounded-md"
                 />
                 <p>바탕화면에 추가</p>
-              </a>
+              </a> */}
               <Popover
                 content={
                   <div className="grid w-full md:w-[14.5rem] p-2">
@@ -94,7 +105,7 @@ export default function Home({
                       />
                       <p>크롬 익스텐션 설치</p>
                     </a>
-                    <a
+                    {/* <a
                       href="/shortcut"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -107,7 +118,7 @@ export default function Home({
                         height={20}
                       />
                       <p>바탕화면에 추가</p>
-                    </a>
+                    </a> */}
                   </div>
                 }
                 align="end"
@@ -131,6 +142,12 @@ export default function Home({
             title="Whats new in Material Design for the web (Chrome Dev Summit 2019)"
           />
         </div>
+        
+        
+        <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
+        지난 며칠 동안 채팅 GPT를 꽤 많이 사용해봤는데, 다른 사람들과 대화를 공유할 수 있는 좋은 방법이 없다는 것을 알게 되었습니다. 대화는 보통 몇 개의 화면에 걸쳐 진행되기 때문에 여러 개의 스크린샷을 찍거나 엄청나게 확대해서 찍어야 합니다. 그래서 저는 이 문제를 해결하기 위해 작은 내보내기 버튼을 추가하는 Chrome 확장 프로그램을 만들었습니다. 여기에 작은 내보내기 버튼이 추가되었습니다. 그러면 이 차세대 사이트의 새 페이지가 생성되며, 구문 강조 표시가 약간 다르다는 점을 제외하면 기본 OpenAI와 동일한 스타일이 적용됩니다. 그런 다음 친구들과 공유할 수 있습니다. 지금은 방금 만든 것이기 때문에 아직 공식 Chrome 확장 프로그램은 아닙니다. 하지만 이 저장소를 복제하고 Chrome 확장 프로그램 페이지에서 압축 해제 로드를 누르면 사용할 수 있을 것입니다. 도움이 되었기를 바라며 피드백이 있으면 알려주세요.
+        <br />
+        </p>
         <div className="w-full bg-gray-100 py-5 sm:py-10 mb-10">
           <div className="flex justify-center space-x-5">
             <Link
@@ -145,6 +162,27 @@ export default function Home({
                 height={318}
                 className="w-48 sm:w-60 hover:scale-105 transition-all"
               />
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=V_L6vG2EJmk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KoShareGPT 사용법
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=FyMl99NC3nA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ChatGPT 사용법
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=FyMl99NC3nA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              크롬익스텐션 설치법
             </Link>
           </div>
         </div>
