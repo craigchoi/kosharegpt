@@ -47,7 +47,7 @@ export default function Home({
             건의 대화가 공유 되었습니다.            
           </p>
           <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
-            현재 크롬 익스텐션 등록 심사 중입니다. 그 동안은 아래 링크를 통해 다운로드 수 사용하실 수 있습니다.
+            현재 크롬 익스텐션 등록 심사 중입니다. 그 동안은 아래 링크를 통해 다운로드해서 사용하실 수 있습니다.
             <br />            
           </p>
           <Link
