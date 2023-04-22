@@ -178,7 +178,7 @@ export default function Home({
               ChatGPT 사용법
             </Link>
             <Link
-              href="https://www.youtube.com/watch?v=FyMl99NC3nA"
+              href="https://kkiuk.tistory.com/336"
               target="_blank"
               rel="noopener noreferrer"
             >
