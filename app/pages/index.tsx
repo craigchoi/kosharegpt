@@ -53,7 +53,7 @@ export default function Home({
           <Link
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/craigchoi/kosharegpt/raw/main/extension/%ED%81%AC%EB%A1%AC%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98.zip"
+          href="https://github.com/craigchoi/kosharegpt/raw/main/extension/Archive.zip"
         >
           <h1 className="mb-2 text-sm">다운로드</h1>
         </Link>
