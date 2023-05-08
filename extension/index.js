@@ -23,8 +23,8 @@ function init() {
 
   const id = setInterval(() => {
     if (
-      !document.querySelector("#share-button") ||
-      document.querySelector("#share-button").style.display === "none"
+      !document.querySelector("#export-button") ||
+      document.querySelector("#export-button").style.display === "none"
     ) {
       appendShareButton();
     }
@@ -131,11 +131,11 @@ function getAvatarImage() {
   try {
     const canvas = document.createElement("canvas");
 
-    const image = document.querySelectorAll("img")[1];
+    const image = document.querySelectorAll("img")[3];
 
     // Set the canvas size to 30x30 pixels
-    canvas.width = 30;
-    canvas.height = 30;
+    canvas.width = 48;
+    canvas.height = 48;
 
     // Draw the img onto the canvas
     canvas.getContext("2d").drawImage(image, 0, 0);
@@ -143,7 +143,7 @@ function getAvatarImage() {
     // Convert the canvas to a base64 string as a JPEG image
     const base64 = canvas.toDataURL("image/jpeg");
 
-    return base64;
+      return base64;
   } catch (error) {
     console.log("Error generating avatar image.");
     return null;
@@ -153,7 +153,7 @@ function getAvatarImage() {
 function createBtn() {
   const button = document.createElement("button");
 
-  button.id = "share-button";
+  button.id = "export-button";
 
   button.classList.add("btn", "flex", "gap-2", "justify-center", "btn-neutral");
 
