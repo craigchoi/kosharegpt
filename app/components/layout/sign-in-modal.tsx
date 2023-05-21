@@ -70,7 +70,33 @@ const SignInModal = ({
                   width={20}
                   height={20}
                 />
-                <p>Google로 로그인하기</p>
+                <p>구글로 로그인하기</p>
+              </>
+            )}
+          </button>
+          <button
+            disabled={signInClicked}
+            className={`${
+              signInClicked
+                ? "cursor-not-allowed bg-gray-100 border-gray-200"
+                : "bg-white text-black border border-gray-200 hover:bg-gray-50"
+            } flex justify-center items-center space-x-3 shadow-sm w-full text-sm h-10 rounded-md border transition-all duration-75 focus:outline-none`}
+            onClick={() => {
+              setSignInClicked(true);
+              signIn("naver");
+            }}
+          >
+            {signInClicked ? (
+              <LoadingDots color="#808080" />
+            ) : (
+              <>
+                <Image
+                  alt="Naver logo"
+                  src="/naver.svg"
+                  width={20}
+                  height={20}
+                />
+                <p>네이버로 로그인하기</p>
               </>
             )}
           </button>
@@ -91,7 +117,7 @@ const SignInModal = ({
             ) : (
               <>
                 <Twitter className="text-[#1DA1F2] w-5 h-5" />
-                <p>Twitter로 로그인하기</p>
+                <p>트위터로 로그인하기</p>
               </>
             )}
           </button>
