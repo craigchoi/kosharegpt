@@ -1,13 +1,27 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
-import TwitterProvider from "next-auth/providers/twitter";
-import { TwitterLegacyProfile } from "next-auth/providers/twitter";
-import GoogleProvider from "next-auth/providers/google";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import prisma from "@/lib/prisma";
+import NextAuth, { NextAuthOptions } from 'next-auth';
+import TwitterProvider from 'next-auth/providers/twitter';
+import { TwitterLegacyProfile } from 'next-auth/providers/twitter';
+import GoogleProvider from 'next-auth/providers/google';
+import NaverProvider from 'next-auth/providers/naver';
+
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
+import prisma from '@/lib/prisma';
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
+    NaverProvider({
+      clientId: process.env.NAVER_CLIENT_ID as string,
+      clientSecret: process.env.NAVER_CLIENT_SECRET as string,
+      profile(profile) {
+        return {
+          id: profile.id,
+          name: profile.nickname,
+          email: profile.email,
+          image: profile.profile_image,
+        };
+      },
+    }),
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
@@ -15,7 +29,7 @@ export const authOptions: NextAuthOptions = {
         return {
           id: profile.sub,
           name: profile.name,
-          username: profile.name.replace(/\s/g, "").toLowerCase(),
+          username: profile.name.replace(/\s/g, '').toLowerCase(),
           email: profile.email,
           image: profile.picture,
         };
@@ -31,10 +45,10 @@ export const authOptions: NextAuthOptions = {
           username: profile.screen_name,
           twitter: profile.screen_name,
           // @ts-ignore
-          email: profile.email && profile.email != "" ? profile.email : null,
+          email: profile.email && profile.email != '' ? profile.email : null,
           image: profile.profile_image_url_https.replace(
             /_normal\.(jpg|png|gif)$/,
-            ".$1"
+            '.$1'
           ),
         };
       },
