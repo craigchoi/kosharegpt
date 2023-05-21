@@ -20,8 +20,15 @@
       >
         <input id="csrfToken-google" type="hidden" name="csrfToken" />
         <button type="submit" class="button">
-          <img src="/assets/chrome.svg" alt="Google" />
-          <span>Google로 로그인하기</span>
+          <img src="/assets/chrome.svg" alt="구글" />
+          <span>구글로 로그인하기</span>
+        </button>
+      </form>
+      <form action="https://kosharegpt.com/api/auth/signin/naver" target="_blank" method="POST">
+        <input id="csrfToken-naver" type="hidden" name="csrfToken" />
+        <button type="submit" class="button">
+          <img src="/assets/naver.svg" alt="네이버" />
+          <span>네이버로 로그인하기</span>
         </button>
       </form>
       <form
@@ -31,8 +38,8 @@
       >
         <input id="csrfToken-twitter" type="hidden" name="csrfToken" />
         <button class="button">
-          <img src="/assets/twitter.svg" alt="Twitter" />
-          <span>Twitter로 로그인하기</span>
+          <img src="/assets/twitter.svg" alt="트위터" />
+          <span>트위터로 로그인하기</span>
         </button>
       </form>
     </div>
