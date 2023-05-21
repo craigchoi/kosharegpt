@@ -15,11 +15,11 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.NAVER_CLIENT_SECRET as string,
       profile(profile) {
         return {
-          id: profile.id,
-          name: profile.nickname,
-          username: profile.nickname,
-          email: profile.email,
-          image: profile.profile_image,
+          id: profile.response.id,
+          name: profile.response.nickname,
+          username: profile.response.nickname,
+          email: profile.response.email,
+          image: profile.response.profile_image,
         };
       },
     }),
