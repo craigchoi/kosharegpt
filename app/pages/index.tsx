@@ -45,18 +45,7 @@ export default function Home({
               {Intl.NumberFormat("en-us").format(totalConvos)}
             </span>{" "}
             건의 대화가 공유 되었습니다.            
-          </p>
-          <p className="max-w-lg text-gray-600 transition-colors sm:text-lg">
-            현재 크롬 익스텐션 등록 심사 중입니다. 그 동안은 아래 링크를 통해 다운로드해서 사용하실 수 있습니다.
-            <br />            
-          </p>
-          <Link
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://github.com/craigchoi/kosharegpt/raw/main/extension/Archive.zip"
-        >
-          <h1 className="mb-2 text-sm">다운로드</h1>
-        </Link>
+          </p>        
           <div className="flex flex-col sm:flex-row">
             <div className="flex justify-center items-center mb-3 sm:mr-3 sm:mb-0 rounded-lg bg-[#232c67] md:bg-indigo-500 text-white shadow-md">
               <a
@@ -176,13 +165,6 @@ export default function Home({
               rel="noopener noreferrer"
             >
               ChatGPT 사용법
-            </Link>
-            <Link
-              href="https://kkiuk.tistory.com/336"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              크롬익스텐션 설치법
             </Link>
           </div>
         </div>
