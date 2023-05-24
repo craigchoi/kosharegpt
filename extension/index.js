@@ -13,21 +13,23 @@ function init() {
     const buttonsWrapper = document.querySelector(
       "#__next main form > div div:nth-of-type(1) > div"
     );
-    const mobileWrapper = document.querySelector('#__next main form > div');
-
+    const mobileWrapper = document.querySelector("#__next main form > div");
 
     if (buttonsWrapper) {
-      if (buttonsWrapper.contains(shareButton) || mobileWrapper.contains(shareButton)) {
+      if (
+        buttonsWrapper.contains(shareButton) ||
+        mobileWrapper.contains(shareButton)
+      ) {
         buttonsWrapper.removeChild(shareButton);
-        mobileWrapper.removeChild(shareButton)
+        mobileWrapper.removeChild(shareButton);
       }
       buttonsWrapper.appendChild(shareButton);
     } else {
       if (mobileWrapper) {
-       if (mobileWrapper.contains(shareButton)) {
-        mobileWrapper.removeChild(shareButton)
-      }
-        mobileWrapper.appendChild(shareButton)
+        if (mobileWrapper.contains(shareButton)) {
+          mobileWrapper.removeChild(shareButton);
+        }
+        mobileWrapper.appendChild(shareButton);
       }
     }
   }
@@ -156,7 +158,7 @@ function getAvatarImage() {
     // Convert the canvas to a base64 string as a JPEG image
     const base64 = canvas.toDataURL("image/jpeg");
 
-      return base64;
+    return base64;
   } catch (error) {
     console.log("Error generating avatar image.");
     return null;
